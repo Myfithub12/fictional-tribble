@@ -18,6 +18,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     background-color: #a593c2;
 }
 
+#info {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin: auto;
+    color:white;
+}
+
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -32,12 +39,49 @@ h1{
     color: black;
 }
 
+h2{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+
 section {
     padding-top: 3rem;
     padding-bottom: 3rem;
     margin: auto;
     text-align: center;
 }
+
+#hammie {
+    float: right;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+#hamnav {
+    width: 100%;
+    background: rgb(116, 78, 78);
+    position: sticky;
+    top: 0;
+  }
+  
+  #hamitems { display: flex; }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover { background: #2e1f74; }
+  
+  #hamnav label, #hamburger { display: none; }
 
 #footer {
     padding-top: 3rem;
@@ -69,4 +113,23 @@ section {
         flex-grow: 1;
         justify-content: center;
     }
+    
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid rgb(46, 161, 61);
+    }
+  
+    #hamnav label {
+      display: inline-block;
+      color: white;
+      background: #a02620;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
 }
